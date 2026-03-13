@@ -9,11 +9,13 @@ const solutionMap = {
   'cloud-vms': 'productVMS',
   'enterprise-management-system': 'productEMS',
   'iccc': 'productICCC',
+  'integrated-command-control-center': 'productICCC',
   'cloudai': 'solutionCloudAI',
   'genai': 'solutionGenAI',
   'visualbot': 'solutionVisualBot',
   'live-streaming': 'solutionLiveStreaming',
-  'face-surveillance': 'solutionFSV',
+  'live-streaming-solution': 'solutionLiveStreaming',
+  'flying-squad-vehicle': 'solutionFSV',
 };
 
 export async function generateStaticParams() {

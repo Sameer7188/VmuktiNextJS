@@ -47,7 +47,7 @@ const whoWeAreLinks = [
   // { text: "Help Desk", path: "/whoweare/helpdesk" },
 ];
 
-const globalPresence =[
+const globalPresence = [
   { text: "USA", path: "/usa/video-surveillance-solutions" },
   { text: "UK", path: "/uk/video-surveillance-solutions" },
 ];
@@ -616,7 +616,7 @@ const NewsletterSubscription = () => {
                         </ListItem>
                       ))}
                     </List>
-                    
+
                     {/* Global Presence Section */}
                     <Box mt="20px">
                       <Text fontSize="14px" fontWeight="700" color="#000" mb="10px">
@@ -678,7 +678,7 @@ const NewsletterSubscription = () => {
                   p="15px"
                   boxShadow="sm"
                   zIndex="1"
-                  // onClick={(e) => e.stopPropagation()} // Prevent container click from bubbling
+                // onClick={(e) => e.stopPropagation()} // Prevent container click from bubbling
                 >
                   {[...whoWeAreLinks].map((item, index, array) => (
                     <Box key={index}>
@@ -708,7 +708,7 @@ const NewsletterSubscription = () => {
                       )}
                     </Box>
                   ))}
-                  
+
                   {/* Global Presence Section */}
                   <Box mt="20px">
                     <Text fontSize="14px" fontWeight="700" color="#000" mb="10px">
@@ -1270,7 +1270,7 @@ const NewsletterSubscription = () => {
                 color="#000"
                 fontWeight="400"
               >
-                Copyright © 2025, VMukti Solutions
+                Copyright © 2026, VMukti Solutions
               </Text>
             </Box>
           </Flex>
