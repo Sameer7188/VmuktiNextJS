@@ -10,7 +10,7 @@ const industryMap = {
   'smart-city': 'industrySmartCity',
   'healthcare': 'industryHealthcare',
   'manufacturing': 'industryManufacturing',
-  'oil-gas': 'industryOilGas',
+  'oil-and-gas': 'industryOilGas',
   'government': 'industryGovernment',
   'defense': 'industryDefense',
   'warehouse': 'industryWarehouse',
@@ -43,6 +43,10 @@ export default async function IndustryDetailsPage({ params }) {
   const { name } = await params;
   
   // Redirect non-canonical URLs to canonical ones
+  if (name === 'oil-gas') {
+    redirect('/industry/oil-and-gas');
+  }
+
   if (name === 'sports-and-entertainment') {
     redirect('/industry/sports-entertainment');
   }

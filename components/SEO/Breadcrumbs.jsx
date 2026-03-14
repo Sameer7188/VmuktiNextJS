@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 /**
  * SEO Breadcrumbs Component
@@ -38,6 +38,7 @@ const ROUTE_LABELS = {
   'education': 'Education',
   'warehouse': 'Warehouse & Logistics',
   'oil-gas': 'Oil & Gas',
+  'oil-and-gas': 'Oil & Gas',
   'transportation': 'Transportation',
   'government': 'Government',
   'hospitality': 'Hospitality',
@@ -58,8 +59,8 @@ function formatSegment(segment) {
 }
 
 const Breadcrumbs = ({ customLabels = {}, className = '' }) => {
-  const location = useLocation();
-  const pathSegments = location.pathname.split('/').filter(Boolean);
+  const pathname = usePathname() || '/';
+  const pathSegments = pathname.split('/').filter(Boolean);
 
   if (pathSegments.length === 0) return null;
 
@@ -81,20 +82,19 @@ const Breadcrumbs = ({ customLabels = {}, className = '' }) => {
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
-      item: \`https://www.vmukti.com\${item.path}\`,
+      item: `https://www.vmukti.com${item.path}`,
     })),
   };
 
   return (
     <>
-      <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify(breadcrumbSchema)}
-        </script>
-      </Helmet>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <nav
         aria-label="Breadcrumb"
-        className={\`seo-breadcrumbs \${className}\`}
+        className={`seo-breadcrumbs ${className}`}
         style={{
           padding: '12px 0',
           fontSize: '14px',
@@ -135,7 +135,7 @@ const Breadcrumbs = ({ customLabels = {}, className = '' }) => {
                   </span>
                 ) : (
                   <Link
-                    to={item.path}
+                    href={item.path}
                     style={{
                       color: '#2563eb',
                       textDecoration: 'none',

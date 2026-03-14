@@ -81,15 +81,6 @@ const VMuktiHomepage = () => {
           content="https://www.vmukti.com/assets/tablet1.webp"
         />
         <link rel="canonical" href="https://www.vmukti.com" />
-        {homepageSchemas.map((schema, index) => (
-          <script
-            key={`schema-${index}`}
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(schema),
-            }}
-          />
-        ))}
       </Helmet>
 
       <PageContentWrapper noPadding>

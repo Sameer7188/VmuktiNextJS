@@ -28,7 +28,7 @@ export default async function sitemap() {
     { url: `${SITE_URL}/solution/live-streaming-solution`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${SITE_URL}/solution/flying-squad-vehicle`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     // Industries
-    ...['banking', 'smart-city', 'healthcare', 'manufacturing', 'oil-gas', 'government', 'defense',
+    ...['banking', 'smart-city', 'healthcare', 'manufacturing', 'oil-and-gas', 'government', 'defense',
       'warehouse', 'logistics', 'education', 'election', 'transportation', 'pharma', 'construction',
       'hospitality', 'sports-entertainment', 'enterprise', 'retail'
     ].map(name => ({
