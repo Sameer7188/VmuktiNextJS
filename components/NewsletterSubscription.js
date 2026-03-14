@@ -61,7 +61,7 @@ const globalPresence = [
 // ];
 const resources = [
   // Column 1
-  { text: "Blogs", path: "/blog" },
+  { text: "Insights & Blogs", path: "/blog" },
   // { text: "Company News" },
 
   // Column 2

@@ -1,6 +1,7 @@
 import { generatePageMetadata } from '../../../lib/metadata';
 import { seoConfig } from '../../../lib/seo-config';
 import IndustryDetailsClient from './industry-details-client';
+import { redirect } from 'next/navigation';
 
 export const dynamic = 'force-dynamic';
 
@@ -40,5 +41,11 @@ export async function generateMetadata({ params }) {
 
 export default async function IndustryDetailsPage({ params }) {
   const { name } = await params;
+  
+  // Redirect non-canonical URLs to canonical ones
+  if (name === 'sports-and-entertainment') {
+    redirect('/industry/sports-entertainment');
+  }
+  
   return <IndustryDetailsClient industryName={name} />;
 }

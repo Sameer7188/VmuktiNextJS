@@ -1,6 +1,7 @@
 import { generatePageMetadata } from '../../../lib/metadata';
 import { seoConfig } from '../../../lib/seo-config';
 import SolutionDetailsClient from './solution-details-client';
+import { redirect } from 'next/navigation';
 
 export const dynamic = 'force-dynamic';
 
@@ -33,5 +34,19 @@ export async function generateMetadata({ params }) {
 
 export default async function SolutionDetailsPage({ params }) {
   const { name } = await params;
+  
+  // Redirect non-canonical URLs to canonical ones
+  if (name === 'generative-ai') {
+    redirect('/solution/genai');
+  }
+  
+  if (name === 'cloud-ai') {
+    redirect('/solution/cloudai');
+  }
+  
+  if (name === 'visual-bot') {
+    redirect('/solution/visualbot');
+  }
+  
   return <SolutionDetailsClient solutionName={name} />;
 }
