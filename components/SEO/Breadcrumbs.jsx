@@ -96,9 +96,12 @@ const Breadcrumbs = ({ customLabels = {}, className = '' }) => {
         aria-label="Breadcrumb"
         className={`seo-breadcrumbs ${className}`}
         style={{
-          padding: '12px 0',
-          fontSize: '14px',
-          color: '#6b7280',
+          padding: '6px 14px',
+          fontSize: '13px',
+          color: '#555e6d',
+          background: '#E7E7E7',
+          borderRadius: '0 0 8px 8px',
+          display: 'inline-flex',
         }}
       >
         <ol
@@ -124,11 +127,11 @@ const Breadcrumbs = ({ customLabels = {}, className = '' }) => {
                 }}
               >
                 {index > 0 && (
-                  <span style={{ color: '#9ca3af', margin: '0 2px' }}>/</span>
+                  <span style={{ color: '#8a9099', margin: '0 2px' }}>/</span>
                 )}
                 {isLast ? (
                   <span
-                    style={{ color: '#111827', fontWeight: 500 }}
+                    style={{ color: '#1e2a38', fontWeight: 500 }}
                     aria-current="page"
                   >
                     {item.name}
@@ -137,7 +140,7 @@ const Breadcrumbs = ({ customLabels = {}, className = '' }) => {
                   <Link
                     href={item.path}
                     style={{
-                      color: '#2563eb',
+                      color: '#3F77A5',
                       textDecoration: 'none',
                     }}
                   >

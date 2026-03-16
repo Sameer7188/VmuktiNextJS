@@ -654,10 +654,10 @@ export const solutionsData = {
 
     // Section 7: Why Choose Us from the seventh image
     whyChooseUs: {
-      heading: "Why Choose Us for VMS?",
+      heading: "Why Choose Us for ICCC?",
       description: [
-        "At VMukti, we bring you surveillance without compromise. Our AI-powered VMS delivers real-time awareness and automated threat detection so you're never in the dark and never a second too late. Manual oversight is outdated. Our system replaces it with fast, intelligent response built right in.",
-        "You get secure, encrypted access to multi-site footage anytime. Our adaptive storage grows with you whether you're scaling up or centralizing control. This is surveillance mode for forward-thinking operations like yours.",
+        "At VMukti, we deliver integrated command and control solutions that unify your entire surveillance ecosystem. Our ICCC platform combines real-time video feeds, GIS mapping, AI analytics, and incident management into one centralized hub, ensuring you never miss a critical moment and can respond instantly to any situation.",
+        "You get seamless coordination between field units and command centers with encrypted communication channels and role-based access controls. Our scalable ICCC architecture grows with your operations, whether you're managing a single facility or coordinating citywide smart city initiatives.",
       ],
       images: ["/assets/solution_iccc_choose_1.png"],
     },
@@ -1852,10 +1852,10 @@ export const solutionsData = {
 
     // Section 7: Why Choose Us from the seventh image
     whyChooseUs: {
-      heading: "Why Choose Us for VMS?",
+      heading: "Why Choose Us for GenAI?",
       description: [
-        "At VMukti, we bring you surveillance without compromise. Our AI-powered VMS delivers real-time awareness and automated threat detection so you're never in the dark and never a second too late. Manual oversight is outdated. Our system replaces it with fast, intelligent response built right in.",
-        "You get secure, encrypted access to multi-site footage anytime. Our adaptive storage grows with you whether you're scaling up or centralizing control. This is surveillance mode for forward-thinking operations like yours.",
+        "At VMukti, we revolutionize surveillance with Generative AI that thinks, learns, and adapts in real-time. Our GenAI solution transforms how you search, analyze, and understand video data through natural language queries, automated report generation, and intelligent visual summaries that deliver actionable insights instantly.",
+        "You get the power to search through hours of footage using simple voice commands or text queries, while our AI generates comprehensive incident reports automatically. Our GenAI platform integrates seamlessly with existing systems, providing next-generation intelligence that evolves with your security needs.",
       ],
       images: ["/assets/solution_genai_choose_1.png"],
     },

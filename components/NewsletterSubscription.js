@@ -840,6 +840,7 @@ const NewsletterSubscription = () => {
               >
                 {[
                   {
+                    name: "Facebook",
                     svg: (
                       <svg
                         width="11"
@@ -857,6 +858,7 @@ const NewsletterSubscription = () => {
                     link: "https://www.facebook.com/VMuktisolutions",
                   },
                   {
+                    name: "X (Twitter)",
                     svg: (
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -881,6 +883,7 @@ const NewsletterSubscription = () => {
                     link: "https://x.com/VMukti",
                   },
                   {
+                    name: "Instagram",
                     svg: (
                       <svg
                         width="19"
@@ -900,6 +903,7 @@ const NewsletterSubscription = () => {
                     link: "https://www.instagram.com/vmuktisolutions",
                   },
                   {
+                    name: "LinkedIn",
                     svg: (
                       <svg
                         width="19"
@@ -917,6 +921,7 @@ const NewsletterSubscription = () => {
                     link: "https://in.linkedin.com/company/vmuktisolutions",
                   },
                   {
+                    name: "YouTube",
                     svg: (
                       <svg
                         width="21"
@@ -937,6 +942,7 @@ const NewsletterSubscription = () => {
                   <Link
                     key={index}
                     href={social.link}
+                    aria-label={`VMukti on ${social.name}`}
                     color="blue.500"
                     _hover={{
                       color: "blue.700",
@@ -1052,6 +1058,7 @@ const NewsletterSubscription = () => {
               >
                 {[
                   {
+                    name: "Facebook",
                     svg: (
                       <svg
                         width="11"
@@ -1069,6 +1076,7 @@ const NewsletterSubscription = () => {
                     link: "https://www.facebook.com/VMuktisolutions",
                   },
                   {
+                    name: "X (Twitter)",
                     svg: (
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -1093,6 +1101,7 @@ const NewsletterSubscription = () => {
                     link: "https://x.com/VMukti",
                   },
                   {
+                    name: "Instagram",
                     svg: (
                       <svg
                         width="19"
@@ -1112,6 +1121,7 @@ const NewsletterSubscription = () => {
                     link: "https://www.instagram.com/vmuktisolutions",
                   },
                   {
+                    name: "LinkedIn",
                     svg: (
                       <svg
                         width="19"
@@ -1129,6 +1139,7 @@ const NewsletterSubscription = () => {
                     link: "https://in.linkedin.com/company/vmuktisolutions",
                   },
                   {
+                    name: "YouTube",
                     svg: (
                       <svg
                         width="21"
@@ -1149,6 +1160,7 @@ const NewsletterSubscription = () => {
                   <Link
                     key={index}
                     href={social.link}
+                    aria-label={`VMukti on ${social.name}`}
                     color="blue.500"
                     _hover={{
                       color: "blue.700",
